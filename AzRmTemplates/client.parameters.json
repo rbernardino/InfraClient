@@ -12,13 +12,13 @@
       "value": "WinAdmin"
     },
     "vmWindowsOSVersion": {
-      "value": "2012-R2-Datacenter"
+      "value": "2016-Datacenter"
     },
     "vmPublicIpDnsName": {
       "value": "dsclab-client"
     },
     "storageAccountName": {
       "value": "clientstoragestd"
-    }    
+    }
   }
 }
