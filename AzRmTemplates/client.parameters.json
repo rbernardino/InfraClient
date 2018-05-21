@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "vnet-name": {
-      "value": "dsclab-vnet"
+      "value": "onprem-vnet"
     },
     "vmName": {
       "value": "client"
@@ -15,7 +15,7 @@
       "value": "2016-Datacenter"
     },
     "vmPublicIpDnsName": {
-      "value": "dsclab-client"
+      "value": "onprem-client"
     },
     "storageAccountName": {
       "value": "clientstoragestd"
