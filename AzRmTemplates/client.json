@@ -54,6 +54,18 @@
       "metadata": {
         "description": "The storage account name for this Virtual Machine."
       }
+    },
+    "vmSize": {
+      "type": "string",
+      "metadata": {
+        "description": "The size or SKU of the Virtual Machine."
+      }
+    },
+    "vmSubnetName": {
+      "type": "string",
+      "metadata": {
+        "description": "The subnet where this Virtual Machine will be placed."
+      }
     }
   },
 
@@ -61,11 +73,11 @@
     "vmImagePublisher": "MicrosoftWindowsServer",
     "vmImageOffer": "WindowsServer",
     "vmOSDiskName": "client-OsDisk",
-    "vmSize": "Standard_B1s",
+    "vmSize": "[parameters('vmSize')]",
     "vmStorageAccountContainerName": "vhds",
     "vmPublicIpName": "client-public-ip",
     "vmNicName": "[concat(parameters('vmName'), '-', 'nic-0')]",
-    "vm-subnet-name": "mgmt",
+    "vm-subnet-name": "[parameters('vmSubnetName')]",
     "networkResource": "dsclabNetwork",
     "vmSubnetRef": "[resourceId( variables('networkResource'), 'Microsoft.Network/virtualNetworks', parameters('vnet-name') )]",
     "vmSubnet": "[concat(variables('vmSubnetRef'), '/subnets/', variables('vm-subnet-name'))]"

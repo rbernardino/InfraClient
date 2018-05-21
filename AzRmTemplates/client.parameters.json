@@ -19,6 +19,12 @@
     },
     "storageAccountName": {
       "value": "clientstoragestd"
+    },
+    "vmSubnetName": {
+      "value": "onprem-dc"
+    },
+    "vmSize": {
+      "value": "Standard_B1S"
     }
   }
 }
