@@ -72,10 +72,10 @@
   "variables": {
     "vmImagePublisher": "MicrosoftWindowsServer",
     "vmImageOffer": "WindowsServer",
-    "vmOSDiskName": "client-OsDisk",
+    "vmOSDiskName": "[concat(parameters('vmName'), '-OsDisk')]",
     "vmSize": "[parameters('vmSize')]",
     "vmStorageAccountContainerName": "vhds",
-    "vmPublicIpName": "client-public-ip",
+    "vmPublicIpName": "[concat(parameters('vmName'), '-public-ip')]",
     "vmNicName": "[concat(parameters('vmName'), '-', 'nic-0')]",
     "vm-subnet-name": "[parameters('vmSubnetName')]",
     "networkResource": "dsclabNetwork",
