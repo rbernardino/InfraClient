@@ -4,8 +4,7 @@
   "parameters": {
     "vnet-name": {
       "type": "string",
-      "minLength": 1,
-      "defaultValue": "dsclab-vnet"
+      "minLength": 1
     },
     "vmName": {
       "type": "string",
@@ -13,7 +12,6 @@
     },
     "vmAdminUserName": {
       "type": "string",
-      "defaultValue": "WinAdmin",
       "minLength": 1
     },
     "vmAdminPassword": {
