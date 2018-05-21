@@ -77,8 +77,8 @@
     "vmPublicIpName": "[concat(parameters('vmName'), '-public-ip')]",
     "vmNicName": "[concat(parameters('vmName'), '-', 'nic-0')]",
     "vm-subnet-name": "[parameters('vmSubnetName')]",
-    "networkResource": "dsclabNetwork",
-    "vmSubnetRef": "[resourceId( variables('networkResource'), 'Microsoft.Network/virtualNetworks', parameters('vnet-name') )]",
+    "networkResourceGroup": "onPremNetwork",
+    "vmSubnetRef": "[resourceId( variables('networkResourceGroup'), 'Microsoft.Network/virtualNetworks', parameters('vnet-name') )]",
     "vmSubnet": "[concat(variables('vmSubnetRef'), '/subnets/', variables('vm-subnet-name'))]"
   },
 
