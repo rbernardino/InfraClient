@@ -3,8 +3,8 @@ break
 #region Deploy the client computer
 {
   $location = 'Southeast Asia'
-  $resourceGroupName = 'dscLabClient'
-  $resourceDeploymentName = 'dscLabClient-deployment'
+  $resourceGroupName = 'onPremClient'
+  $resourceDeploymentName = 'onPremClient-deployment'
   $templateFile = '.\AzRmTemplates\client.json'
   $templateParameterFile = '.\AzRmTemplates\client.parameters.json'
 
