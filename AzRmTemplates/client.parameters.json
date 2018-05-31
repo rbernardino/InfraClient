@@ -21,7 +21,7 @@
       "value": "clientstoragestd"
     },
     "vmSubnetName": {
-      "value": "onprem-dc"
+      "value": "onprem-mgmt"
     },
     "vmSize": {
       "value": "Standard_B1S"
