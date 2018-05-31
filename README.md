@@ -4,6 +4,8 @@ A proof of concept (POC) for implementing a hybrid IT environment using Microsof
 ## Other related repos
 [Domain Controller Tier](https://github.com/rbernardino/InfraDC)
 
-[Network Tier](https://github.com/rbernardino/InfraNetworking)
+[Web Tier](https://github.com/rbernardino/InfraWeb)
 
-Web Tier (TODO)
+[Networking Tier](https://github.com/rbernardino/InfraNetworking)
+
+[WebSphere Application Server Tier](https://github.com/rbernardino/InfraWebSphere)
